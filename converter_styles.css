@@ -1,0 +1,176 @@
+﻿/*.btn is the main div-button that gets used for the programs functionality...adjusted w media query*/
+.convertBtn {
+    /*spaces between grid buttons*/
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+
+    /*sets height, width, color, and rounds corners of buttons*/
+    height: 8rem;
+    max-width: 24%;
+    border-radius: 20px;
+    /*only needed to set bg color on page load*/
+    background-color: #ff7979;
+}
+
+
+
+/*centers conversion label vertically in button div*/
+.height {
+    padding-top: 2rem;
+}
+
+body {
+    /*background color of page*/
+    background-color: #95a5a6;
+
+    /*gets rid of horizontal scrolling*/
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/*set to normal here and adjusted per screensize w media query*/
+.wrap {
+    overflow-wrap: normal;
+}
+
+/*sets padding of button container to 0...changed w media query*/
+.container-padding {
+    padding: 0;
+}
+
+/*margin on input box...adjusted w media query*/
+.input-margin {
+    margin-bottom: 5rem;
+}
+
+/*adjusts btn conversion type label*/
+.type-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*adjusts label for the input box...changed with media query*/
+.input-label {
+    margin-top: 2.5rem;
+}
+
+/* NAVBAR SECTION */
+/* shows active element for scrollspy */
+.active {
+    background-color: #66A5AD;
+}
+
+/* brings to top */
+#naver {
+    background-color: #292b2c;
+    z-index: 1;
+    padding: 0em;
+}
+
+/* adjusts the text of the links inside the navbar */
+#naver li a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*adjusts big text on left side of navbar*/
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* spacing from side scroll bar & bg color */
+#naver ul {
+    background-color: #343a40;
+}
+
+/*color on inside of navbar and dropdown*/
+#naver li {
+    background-color: #343a40;
+}
+
+/* highlights links on hover */
+#naver li:hover,
+li:focus-within {
+    background: #66A5AD;
+    cursor: pointer;
+}
+
+#naver ul>li>ul :hover {
+    background-color: #66A5AD;
+    cursor: pointer;
+}
+
+/* opens dropdown on hover */
+#naver ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+}
+
+/* NAVBAR SECTION */
+
+@media only screen and (max-width: 995px) {
+
+    /*makes converted number wrap to next line instead of overflowing*/
+    .wrap {
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*sets padding of button container to accommodate small screen*/
+    .container-padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /*moves converted label up to fix overflowing line break digits*/
+    .height {
+        padding-top: .4rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    .input-margin {
+        margin-bottom: 1rem;
+    }
+
+    /*adjusts btn conversion type label*/
+    .type-label {
+        font-size: .88rem;
+        font-weight: normal;
+
+    }
+
+    /*adjusts label for the input box...changed with media query*/
+    .input-label {
+        margin-top: 1rem;
+    }
+
+    /*.btn is the main div-button that gets used for the programs functionality...adjusted w media query*/
+    .convertBtn {
+        /*spaces between grid buttons*/
+        margin-left: .5%;
+        margin-right: .5%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        /*sets height, width, color, and rounds corners of buttons*/
+        height: 8rem;
+        max-width: 24%;
+        border-radius: 20px;
+        /*only needed to set bg color on page load*/
+        background-color: #ff7979;
+    }
+}
